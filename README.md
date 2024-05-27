@@ -10,7 +10,7 @@
 
 ![Assets Search Platform](images/12.png)
 
-이러한 기능 구현을 위해 [Amazon Bedrock - Knowledge base](https://aws.amazon.com/ko/bedrock/knowledge-bases/)를 사용할 수 있습니다. Knowledge base는 (1) 연결된 데이터 소스에 저장된 자료에 대하여 임베딩을 수행합니다. (2) 임베딩된 벡터를 Amazon OpenSearch와 같은 연결된 벡터 스토어에 저장하여 검색 가능하도록 합니다. (3) 사용자가 위 [1], [2]의 기능을 이용할 수 있도록 자료검색을 위해 [1] [**Retrieve API**](https://docs.aws.amazon.com/ko_kr/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html)와 제공되는 LLM을 기반으로 [2] [**RetrieveAndGenerate API**](https://docs.aws.amazon.com/ko_kr/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html)를 제공합니다.
+이러한 기능 구현을 위해 [Amazon Bedrock - Knowledge base](https://aws.amazon.com/ko/bedrock/knowledge-bases/)를 사용할 수 있습니다. Knowledge base는 (1) 연결된 데이터 소스에 저장된 자료에 대하여 임베딩을 수행합니다. (2) 임베딩된 벡터를 Amazon OpenSearch와 같은 연결된 벡터 스토어에 저장하여 검색 가능하도록 합니다. (3) 사용자가 위 [1], [2]의 기능을 이용할 수 있도록 자료검색을 위해 [1] [**Retrieve API**](https://docs.aws.amazon.com/ko_kr/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html)와 발췌된 내용과 제공되는 LLM을 기반으로 답변을 생성하는 [2] [**RetrieveAndGenerate API**](https://docs.aws.amazon.com/ko_kr/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html)를 제공합니다.
 
 해당 가이드에서는 이러한 Knowledge base를 구성하는 방법과 제공되는 API를 활용하는 방법을 가이드합니다.
 
